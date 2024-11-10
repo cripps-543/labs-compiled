@@ -1,0 +1,69 @@
+https://docs.python.org/3/library/
+https://numpy.org/doc/2.1/reference/index.html#reference
+https://matplotlib.org/stable/api/index.html
+https://docs.opencv.org/4.x/index.html
+https://datasheets.raspberrypi.com/camera/picamera2-manual.pdf
+
+Most Important Functions by Package
+
+1. time
+- time.sleep(seconds): Pauses execution for a given number of seconds.
+- time.time(): Returns the current time in seconds since the epoch, useful for measuring elapsed time.
+- time.strftime(format): Formats the current time as a string based on the specified format (e.g., "%Y-%m-%d %H:%M:%S").
+
+2. random
+- random.randint(a, b): Returns a random integer between a and b (inclusive).
+- random.choice(sequence): Selects a random item from a non-empty sequence like a list.
+- random.shuffle(list): Shuffles the elements in a list in place.
+- random.uniform(a, b): Returns a random floating-point number between a and b.
+
+3. csv
+- csv.reader(file): Reads a CSV file, returning each row as a list of strings.
+- csv.writer(file): Writes data to a CSV file.
+- csv.DictReader(file): Reads a CSV file as dictionaries, where each row is a dictionary.
+- csv.DictWriter(file, fieldnames): Writes dictionaries to a CSV file.
+
+4. numpy
+- np.array(data): Creates an array from a list or other data structure.
+- np.zeros(shape), np.ones(shape), np.empty(shape): Create arrays filled with zeros, ones, or uninitialized values.
+- np.linspace(start, stop, num): Generates a specified number of evenly spaced values between start and stop.
+- np.mean(array), np.sum(array), np.min(array), np.max(array): Compute common statistical values for an array.
+- np.reshape(array, new_shape): Reshapes an array without changing its data.
+- np.dot(a, b): Computes the dot product of two arrays.
+
+5. matplotlib
+- plt.plot(x, y): Creates a line plot of y values against x values.
+- plt.hist(data, bins): Creates a histogram of data with a specified number of bins.
+- plt.scatter(x, y): Creates a scatter plot of y values against x values.
+- plt.imshow(image): Displays an image.
+- plt.show(): Displays all open plots.
+
+6. datetime
+- datetime.datetime.now(): Returns the current date and time.
+- datetime.datetime.strptime(date_string, format): Parses a string into a datetime object based on a given format.
+- datetime.datetime.strftime(format): Formats a datetime object as a string.
+- datetime.timedelta(days=, seconds=, minutes=, ...): Represents a duration for easy date arithmetic.
+
+7. cv2 (OpenCV)
+- cv2.imread(filename): Loads an image from a file.
+- cv2.imshow(window_name, image): Displays an image in a window.
+- cv2.waitKey(delay): Waits for a key press and can close OpenCV windows.
+- cv2.cvtColor(image, code): Converts an image to a different color space (e.g., grayscale).
+- cv2.GaussianBlur(image, (kernel_size, kernel_size), sigmaX): Applies Gaussian blur to an image.
+- cv2.Canny(image, threshold1, threshold2): Applies Canny edge detection.
+- cv2.VideoCapture(source): Captures video from a source (like a camera).
+
+8. picamera2
+- Picamera2(): Creates a Picamera2 instance for managing camera settings and functions.
+- picam2.start(): Starts the camera preview or capture process.
+- picam2.capture_array(): Captures the current frame as a NumPy array.
+- picam2.stop(): Stops the camera capture.
+
+9. os
+- os.listdir(path): Lists all files and directories in a specified path.
+- os.path.join(path, *paths): Joins multiple paths into a single path string.
+- os.path.exists(path): Checks if a given path exists.
+- os.remove(path): Deletes a specified file.
+- os.makedirs(path, exist_ok=True): Creates directories, including intermediate ones if they don’t exist.
+- os.getcwd(): Returns the current working directory.
+- os.environ: Accesses environment variables.
